@@ -1,0 +1,56 @@
+html body {
+  background-color: #373b42;
+  color: black;
+}
+.main {
+  height: 100vh;
+  width: 100vw;
+}
+.main-container {
+  height: fit-content;
+  position: absolute;
+}
+
+.main-button {
+  transition: 0.3s all ease-in-out;
+  position: relative;
+  bottom: 7px;
+  right: 10px;
+}
+
+.main-button:hover {
+  color: rgb(19, 163, 46);
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+.form-control:focus {
+  border-color: rgb(19, 163, 46) !important;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(19, 163, 46, 0.6) !important;
+}
+
+.todo-item {
+  margin: 6px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #373b4222;
+}
+
+.todo-text {
+  padding-left: 10px;
+  font-size: large;
+}
+
+.icon-fix {
+  transform: translate(0,-2px);
+}
+
+input.check {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+
+input[type='checkbox'] {
+  accent-color: rgb(124, 216, 82);
+}
