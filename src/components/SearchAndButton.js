@@ -1,3 +1,6 @@
+//!The code is commented becouse the elemet is not being used.
+
+/*
 import React from 'react'
 import { MdAddCircle } from "react-icons/md";
 import { useState, useRef } from 'react';
@@ -26,11 +29,12 @@ const SearchAndButton = () => {
       <input ref={todoNameRef} className='form-control' type='text' placeholder='Add a task...'/>
     </div>  
 
-    <span className='col-1 pr-5'>       {/*//! Button */}
+    <span className='col-1 pr-5'>       
       <MdAddCircle onClick={handleAddTodo} className='main-button' size="50px"/>
     </span>
     </>
   )
 }
 
-export default SearchAndButton
+export default SearchAndButton 
+*/

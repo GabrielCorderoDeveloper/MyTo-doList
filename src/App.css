@@ -54,3 +54,15 @@ input.check {
 input[type='checkbox'] {
   accent-color: rgb(124, 216, 82);
 }
+
+.main a {
+  color: rgb(39, 86, 61);
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.main a:hover {
+  color: rgb(13, 168, 85);
+  text-decoration: underline;
+}

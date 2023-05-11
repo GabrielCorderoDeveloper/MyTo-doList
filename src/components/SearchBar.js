@@ -1,4 +1,7 @@
-import React from 'react'
+//!The code is commented becouse the elemet is not being used.
+
+
+/*import React from 'react'
 import { useRef } from 'react';
 
 const SearchBar = () => {
@@ -18,4 +21,4 @@ const SearchBar = () => {
   )
 }
 
-export default SearchBar
+export default SearchBar */

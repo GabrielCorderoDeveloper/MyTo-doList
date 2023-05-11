@@ -5,6 +5,7 @@ const Todo = ({ todo, toggleTodo }) => {
     toggleTodo(todo.id)
   }
 
+  //The to-do elements will be rendered
   return (
     <div className='todo-item'>
         <label>

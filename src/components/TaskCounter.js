@@ -6,6 +6,7 @@ const TaskCounter = ({ todos }) => {
   let completedTasks = todos.filter(todo => todo.complete).length;
 
   let now = (Math.floor((completedTasks / totalTasks) * 100));
+//The progress bar will say how many tasks you have completed.
 
   return (
     <ProgressBar 

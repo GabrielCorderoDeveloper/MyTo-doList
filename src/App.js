@@ -10,10 +10,11 @@ import { MdAddCircle } from "react-icons/md";
 const LOCAL_STORAGE_KEY = 'todoApp.todos'
 
 function App() {
-  //~   Here i will save all the todos
+ // Here we define the initial state of the todo list using the useState hook
   const [todos, setTodos] = useState([{
     id: 1, name: 'Follow Gabriel_coder47 on instagram📷', complete: false
   }]);
+   // UseRef hook to get a reference to the input field
   const todoNameRef = useRef();
 
   //*Save and load todos <------------------------------------------------------------------------|||||
@@ -25,8 +26,6 @@ function App() {
   useEffect(() => {
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(todos))
   }, [todos])
-
-  //  localStorage.clear();
   //*  <------------------------------------------------------------------------------------------|||||
 
   function toggleTodo(id) {
@@ -36,9 +35,9 @@ function App() {
     setTodos(newTodos)
   }
 
+  //It will generate a random ID
   function idGenerator() {
     const id = Math.floor(Math.random() * 10000)
-    //+ console.log(id)
     return id
   }
   function handleAddTodo() {
@@ -50,11 +49,13 @@ function App() {
     todoNameRef.current.value = null
   }
 
+  //It will erase the todos that are completed
   function clearTodos() {
     const newTodos = todos.filter(todo => !todo.complete)
     setTodos(newTodos)
   }
 
+  //Defining the bar and the button
   const SearchAndButton = () => {
   return (
     <>
@@ -86,8 +87,10 @@ function App() {
             </div>
             </div>
 
+            <div className='mt-5 mb-1'>
+              <a href='https://github.com/GabrielCorderoDeveloper' target='abput_blank'>Gabriel Cordero 2023</a>
+            </div>
           </div>
-
     </div>
   );
 }
