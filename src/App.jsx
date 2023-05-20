@@ -83,7 +83,7 @@ function App() {
 
   return (
     //main container
-    <div className='main d-flex justify-content-center'>
+    <div className='main d-flex justify-content-center pt-md-5'>
 
       {showComponent && <Animation />}
 
