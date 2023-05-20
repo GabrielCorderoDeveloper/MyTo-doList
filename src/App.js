@@ -25,7 +25,7 @@ function App() {
     useEffect(() => {
       setTimeout(() => {
         setShowComponent(false);
-      }, 2500);
+      }, 2600);
   }, []);
 
   //*Save and load todos <------------------------------------------------------------------------|||||
