@@ -19,7 +19,7 @@
     opacity: 45%;
 }
 .loading-container > img {
-    width: 400px;
+    width: 300px;
     z-index: 2;
     border-radius: 40px;
     /*Making the element non interactuable*/
