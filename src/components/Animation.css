@@ -21,7 +21,7 @@
 .loading-container > img {
     width: 400px;
     z-index: 2;
-
+    border-radius: 40px;
     /*Making the element non interactuable*/
     user-select: none;
     pointer-events: none;
