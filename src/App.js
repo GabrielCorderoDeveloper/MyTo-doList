@@ -6,6 +6,7 @@ import TaskList from './components/TaskList';
 import RemoveChecked from './components/RemoveChecked';
 import React, { useState, useRef, useEffect } from 'react';
 import { MdAddCircle } from "react-icons/md";
+import Animation from './components/Animation';
 
 const LOCAL_STORAGE_KEY = 'todoApp.todos'
 
@@ -16,6 +17,16 @@ function App() {
   }]);
    // UseRef hook to get a reference to the input field
   const todoNameRef = useRef();
+
+
+  const [showComponent, setShowComponent] = useState(true);
+
+    // After 2.5S the animation component will not be showed
+    useEffect(() => {
+      setTimeout(() => {
+        setShowComponent(false);
+      }, 2500);
+  }, []);
 
   //*Save and load todos <------------------------------------------------------------------------|||||
   useEffect(() => {
@@ -73,6 +84,9 @@ function App() {
   return (
     //main container
     <div className='main d-flex justify-content-center'>
+
+      {showComponent && <Animation />}
+
           <div className="main-container container col-lg-8 col-11 m-2 mt-5 p-3 rounded-3 bg-light text-center"> 
             <h3 className='pb-2'>My to-do list</h3>
             <div className='row justify-content-center mb-1'>
