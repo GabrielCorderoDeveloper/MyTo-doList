@@ -151,7 +151,7 @@ svg {
 
 
 /*~ Small Phone variant <-----------------------------------------------------------------------*/
-@media (max-height: 800px) {
+@media (max-height: 700px) {
 
   html body {
     background: linear-gradient(to bottom, #373b42, #373b42, #373b42, #707f72);
