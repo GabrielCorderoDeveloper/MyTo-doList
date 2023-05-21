@@ -102,13 +102,13 @@ svg {
     opacity: 1;
   }
   50% {
-    transform: translateY(-400%) rotate(180deg);
+    transform: translateY(-300%) rotate(180deg);
   }
   90% {
     opacity: 1;
   }
   100% {
-    transform: translateY(-800%) rotate(360deg); opacity: 0;
+    transform: translateY(-600%) rotate(360deg); opacity: 0;
   }
 }
 
@@ -139,13 +139,13 @@ svg {
     opacity: 1;
   }
   50% {
-    transform: translateY(-400%) rotate(90deg);
+    transform: translateY(-300%) rotate(90deg);
   }
   90% {
     opacity: 1;
   }
   100% {
-    transform: translateY(-800%) rotate(180deg); opacity: 0;
+    transform: translateY(-600%) rotate(180deg); opacity: 0;
   }
 }
 
