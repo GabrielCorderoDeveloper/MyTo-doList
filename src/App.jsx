@@ -134,7 +134,7 @@ const handleAnimationStart3 = () => {
             <div className='row justify-content-center mb-1'>
               <SearchAndButton/>
 
-              <div className='task-list mt-2 py-5 px-md-5 px-2 rounded-3 text-start'>
+              <div className='task-list mt-1 py-2 px-md-5 px-2 rounded-3 text-start'>
                 <TaskList todos={todos} toggleTodo={toggleTodo}/>   
               </div>
 
@@ -151,7 +151,7 @@ const handleAnimationStart3 = () => {
                 </svg>
               </a>
 
-              <a className='pt-2 pb-4' href='https://github.com/GabrielCorderoDeveloper' target='abput_blank'>Gabriel Cordero 2023</a>
+              <a href='https://github.com/GabrielCorderoDeveloper' target='abput_blank'>Gabriel Cordero 2023</a>
 
               <a href="https://www.linkedin.com/in/gabriel-cordero-0960b9244/" target='_blank'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-linkedin" viewBox="0 0 16 16">
