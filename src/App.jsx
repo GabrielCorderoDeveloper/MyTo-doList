@@ -125,7 +125,7 @@ const handleAnimationStart3 = () => {
 
   return (
     //main container
-    <div className='main d-flex justify-content-center pt-md-5'>
+    <div className='main d-flex justify-content-center pt-md-3'>
 
       {showComponent && <Animation />}
 
@@ -134,7 +134,7 @@ const handleAnimationStart3 = () => {
             <div className='row justify-content-center mb-1'>
               <SearchAndButton/>
 
-              <div className='mt-2 py-5 px-md-5 px-2 rounded-3 text-start'>
+              <div className='task-list mt-2 py-5 px-md-5 px-2 rounded-3 text-start'>
                 <TaskList todos={todos} toggleTodo={toggleTodo}/>   
               </div>
 

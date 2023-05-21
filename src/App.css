@@ -29,6 +29,10 @@ html body {
   border-color: rgb(19, 163, 46) !important;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(19, 163, 46, 0.6) !important;
 }
+div.task-list {
+  max-height: 40vh;
+  overflow-y: scroll;
+}
 
 .todo-item {
   margin: 6px;
