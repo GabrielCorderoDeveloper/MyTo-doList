@@ -17,8 +17,6 @@ function App() {
   }]);
    // UseRef hook to get a reference to the input field
   const todoNameRef = useRef();
-
-
   const [showComponent, setShowComponent] = useState(true);
 
     // After 2.5S the animation component will not be showed
@@ -60,6 +58,12 @@ function App() {
     todoNameRef.current.value = null
   }
 
+  function handleKeyPress(event) {
+    if (event.key === 'Enter') {
+      handleAddTodo();
+    }
+  }
+
   //It will erase the todos that are completed
   function clearTodos() {
     const newTodos = todos.filter(todo => !todo.complete)
@@ -71,7 +75,7 @@ function App() {
   return (
     <>
     <div className='col-9'> {/*//! Bar */}
-      <input ref={todoNameRef} className='form-control' type='text' placeholder='Add a task...'/>
+      <input onKeyPress={handleKeyPress} ref={todoNameRef} className='form-control' type='text' placeholder='Add a task...'/>
     </div>  
 
     <span className='col-md-1 col-2 pe-5'>       {/*//! Button */}
@@ -81,7 +85,7 @@ function App() {
   )
   }
 
-  //Random positioning for the floating links
+  //Random positioning for the floating links --------------------------->
 function updateLeftPercentage() {
   const svgElement = document.querySelector('.animation-2 svg');
   const leftPercentage = Math.floor(Math.random() * 31) + 0;
