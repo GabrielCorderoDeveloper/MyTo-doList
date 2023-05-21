@@ -1,6 +1,7 @@
 html body {
   background: linear-gradient(to bottom, #373b42, #707f72);
   color: black;
+  overflow: hidden;
 }
 .main {
   height: 100vh;
